@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "1ee7a070-3262-42d5-9cb2-3ec00a0a5d5e",
-		"name": "Avalanche",
+		"_postman_id": "984c5ef8-73b4-4a76-b864-2581bd34f195",
+		"name": "EU",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "12086068"
+		"_exporter_id": "23086587"
 	},
 	"item": [
 		{
@@ -33,7 +33,7 @@
 								"admin"
 							]
 						},
-						"description": "Assign an API an alias, a different endpoint for the API. The original endpoint will still work. This change only affects this node; other nodes will not know about this alias. [More info](https://docs.avax.network/build/apis/admin-api#admin-alias)"
+						"description": "Assign an API an alias, a different endpoint for the API. The original endpoint will still work. This change only affects this node; other nodes will not know about this alias. [More info](https://docs.avax.network/apis/avalanchego/apis/admin#adminalias)"
 					},
 					"response": []
 				},
@@ -61,7 +61,7 @@
 								"admin"
 							]
 						},
-						"description": "Give a blockchain an alias, a different name that can be used any place the blockchain’s ID is used. [More info](https://docs.avax.network/build/apis/admin-api#admin-aliaschain)"
+						"description": "Give a blockchain an alias, a different name that can be used any place the blockchain’s ID is used. [More info](https://docs.avax.network/apis/avalanchego/apis/admin#adminaliaschain)"
 					},
 					"response": []
 				},
@@ -89,7 +89,7 @@
 								"admin"
 							]
 						},
-						"description": "Dump the mutex statistics of the node to the specified file. [More info](https://docs.avax.network/build/apis/admin-api#admin-lockprofile)"
+						"description": "Dump the mutex statistics of the node to the specified file. [More info](https://docs.avax.network/apis/avalanchego/apis/admin#admingetchainaliases)"
 					},
 					"response": []
 				},
@@ -117,7 +117,7 @@
 								"admin"
 							]
 						},
-						"description": "Returns log and display levels of loggers. [More info](https://docs.avax.network/build/avalanchego-apis/admin#admingetloggerlevel)"
+						"description": "Returns log and display levels of loggers. [More info](https://docs.avax.network/apis/avalanchego/apis/admin#admingetloggerlevel)"
 					},
 					"response": []
 				},
@@ -173,7 +173,7 @@
 								"admin"
 							]
 						},
-						"description": "Dump the mutex statistics of the node to the specified file. [More info](https://docs.avax.network/build/apis/admin-api#admin-lockprofile)"
+						"description": "Dump the mutex statistics of the node to the specified file. [More info](https://docs.avax.network/apis/avalanchego/apis/admin#adminlockprofile)"
 					},
 					"response": []
 				},
@@ -201,7 +201,7 @@
 								"admin"
 							]
 						},
-						"description": "Dump the mutex statistics of the node to the specified file. [More info](https://docs.avax.network/build/apis/admin-api#admin-memoryprofile)"
+						"description": "Dump the mutex statistics of the node to the specified file. [More info](https://docs.avax.network/apis/avalanchego/apis/admin#adminmemoryprofile)"
 					},
 					"response": []
 				},
@@ -229,7 +229,7 @@
 								"admin"
 							]
 						},
-						"description": "Sets log and display levels of loggers. [More info](https://docs.avax.network/build/avalanchego-apis/admin#adminsetloggerlevel)"
+						"description": "Sets log and display levels of loggers. [More info](https://docs.avax.network/apis/avalanchego/apis/admin#adminsetloggerlevel)"
 					},
 					"response": []
 				},
@@ -257,7 +257,7 @@
 								"admin"
 							]
 						},
-						"description": "Start profiling the CPU utilization of the node. Will write the profile to the specified file on stop. [More info](https://docs.avax.network/build/apis/admin-api#admin-startcpuprofiler)"
+						"description": "Start profiling the CPU utilization of the node. Will write the profile to the specified file on stop. [More info](https://docs.avax.network/apis/avalanchego/apis/admin#adminstartcpuprofiler)"
 					},
 					"response": []
 				},
@@ -285,7 +285,7 @@
 								"admin"
 							]
 						},
-						"description": "Stop the CPU profile that was previously started. [More info](https://docs.avax.network/build/apis/admin-api#admin-stopcpuprofiler)"
+						"description": "Stop the CPU profile that was previously started. [More info](https://docs.avax.network/apis/avalanchego/apis/admin#adminstopcpuprofiler)"
 					},
 					"response": []
 				}
@@ -319,7 +319,7 @@
 								"auth"
 							]
 						},
-						"description": "Creates a new authorization token that grants access to one or more API endpoints.\n [More info](https://docs.avax.network/build/apis/auth-api#auth-newtoken)"
+						"description": "Creates a new authorization token that grants access to one or more API endpoints.  \n[More info](https://docs.avax.network/apis/avalanchego/apis/auth#authnewtoken)"
 					},
 					"response": []
 				},
@@ -347,7 +347,7 @@
 								"auth"
 							]
 						},
-						"description": "Revoke a previously generated token. The given token will no longer grant access to any endpoint.\nIf the token is invalid, does nothing. [More info](https://docs.avax.network/build/apis/auth-api#auth-revoketoken)"
+						"description": "Revoke a previously generated token. The given token will no longer grant access to any endpoint.  \nIf the token is invalid, does nothing. [More info](https://docs.avax.network/apis/avalanchego/apis/auth#authrevoketoken)"
 					},
 					"response": []
 				},
@@ -375,7 +375,7 @@
 								"auth"
 							]
 						},
-						"description": "Change this node's authorization token password. Any authorization tokens created under an old password will become invalid. [More info](https://docs.avax.network/build/apis/auth-api#auth-changepassword)"
+						"description": "Change this node's authorization token password. Any authorization tokens created under an old password will become invalid. [More info](https://docs.avax.network/apis/avalanchego/apis/auth#authchangepassword)"
 					},
 					"response": []
 				}
@@ -410,18 +410,18 @@
 								"avm"
 							]
 						},
-						"description": "Given a JSON representation of this Virtual Machine’s genesis state, create the byte representation of that state. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmbuildgenesis)"
+						"description": "Given a JSON representation of this Virtual Machine’s genesis state, create the byte representation of that state. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmbuildgenesis)"
 					},
 					"response": []
 				},
 				{
-					"name": "createAddress",
+					"name": "createAddress - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"avm.createAddress\",\n    \"params\": {\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"avm.createAddress\",\n    \"params\": {\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -439,18 +439,18 @@
 								"X"
 							]
 						},
-						"description": "Create a new address controlled by the given user. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-createaddress)"
+						"description": "Create a new address controlled by the given user. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmcreateaddress)"
 					},
 					"response": []
 				},
 				{
-					"name": "createAsset",
+					"name": "createFixedCapAsset - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.createAsset\",\n    \"params\" :{\n        \"name\":\"myVariableCapAsset\",\n        \"symbol\":\"MFCA\",\n        \"denomination\": 0,  \n        \"minterSets\":[\n            {\n                \"minters\":[\n                    \"{{xchainAddress}}\"\n                ],\n                \"threshold\": 1\n            }\n        ],\n        \"from\": [\"{{xchainAddress}}\"],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.createFixedCapAsset\",\n    \"params\" :{\n        \"name\": \"Test Token\",\n        \"symbol\":\"TEST\",\n        \"denomination\": 0,  \n        \"initialHolders\": [\n            {\n                \"address\":\"{{xchainAddress}}\",\n                \"amount\":400\n            }\n        ],\n        \"from\": [\"{{xchainAddress}}\"],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -468,18 +468,18 @@
 								"X"
 							]
 						},
-						"description": "Create a new variable-cap, fungible asset. No units of the asset exist at initialization. Minters can mint units of this asset using `createMintTx`, `signMintTx` and `issueTx`. The asset can be sent with `avm.send`. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-createvariablecapasset)"
+						"description": "Create a new fixed-cap, fungible asset. A quantity of it is created at initialization and then no more is ever created. The asset can be sent with `avm.send`. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmcreatefixedcapasset)"
 					},
 					"response": []
 				},
 				{
-					"name": "createFixedCapAsset",
+					"name": "createNFTAsset - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.createFixedCapAsset\",\n    \"params\" :{\n        \"name\": \"Test Token\",\n        \"symbol\":\"TEST\",\n        \"denomination\": 0,  \n        \"initialHolders\": [\n            {\n                \"address\":\"{{xchainAddress}}\",\n                \"amount\":400\n            }\n        ],\n        \"from\": [\"{{xchainAddress}}\"],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.createNFTAsset\",\n    \"params\" :{\n        \"name\":\"Coincert\",\n        \"symbol\":\"TIXX\",\n        \"minterSets\":[\n            {\n                \"minters\":[\n                    \"{{xchainAddress}}\"\n                ],\n                \"threshold\": 1\n            },\n            {\n                \"minters\":[\n                    \"{{xchainAddress}}\"\n                ],\n                \"threshold\": 1\n            }\n        ],\n        \"from\": [\"{{xchainAddress}}\"],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -497,18 +497,18 @@
 								"X"
 							]
 						},
-						"description": "Create a new fixed-cap, fungible asset. A quantity of it is created at initialization and then no more is ever created. The asset can be sent with `avm.send`. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-createfixedcapasset)"
+						"description": "Create a new non-fungible asset. No units of the asset exist at initialization. Minters can mint units of this asset using `mintTx` and `signMintTx`. The asset can be sent with `avm.sendNFT`. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmcreatenftasset)"
 					},
 					"response": []
 				},
 				{
-					"name": "createNFTAsset",
+					"name": "createVariableCapAsset - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.createNFTAsset\",\n    \"params\" :{\n        \"name\":\"Coincert\",\n        \"symbol\":\"TIXX\",\n        \"minterSets\":[\n            {\n                \"minters\":[\n                    \"{{xchainAddress}}\"\n                ],\n                \"threshold\": 1\n            },\n            {\n                \"minters\":[\n                    \"{{xchainAddress}}\"\n                ],\n                \"threshold\": 1\n            }\n        ],\n        \"from\": [\"{{xchainAddress}}\"],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.createVariableCapAsset\",\n    \"params\" :{\n        \"name\":\"myVariableCapAsset\",\n        \"symbol\":\"MFCA\",\n        \"denomination\": 0,  \n        \"minterSets\":[\n            {\n                \"minters\":[\n                    \"{{xchainAddress}}\"\n                ],\n                \"threshold\": 1\n            }\n        ],\n        \"from\": [\"{{xchainAddress}}\"],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -526,18 +526,18 @@
 								"X"
 							]
 						},
-						"description": "Create a new non-fungible asset. No units of the asset exist at initialization. Minters can mint units of this asset using `mintTx` and `signMintTx`. The asset can be sent with `avm.sendNFT`. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-createnftasset)"
+						"description": "Create a new variable-cap, fungible asset. No units of the asset exist at initialization. Minters can mint units of this asset using `createMintTx`, `signMintTx` and `issueTx`. The asset can be sent with `avm.send`. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmcreatevariablecapasset)"
 					},
 					"response": []
 				},
 				{
-					"name": "createVariableCapAsset",
+					"name": "export - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.createVariableCapAsset\",\n    \"params\" :{\n        \"name\":\"myVariableCapAsset\",\n        \"symbol\":\"MFCA\",\n        \"denomination\": 0,  \n        \"minterSets\":[\n            {\n                \"minters\":[\n                    \"{{xchainAddress}}\"\n                ],\n                \"threshold\": 1\n            }\n        ],\n        \"from\": [\"{{xchainAddress}}\"],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.export\",\n    \"params\" :{\n        \"from\": [\"{{xchainAddress}}\"],\n        \"to\":\"{{cchainbech32address}}\",\n        \"amount\": 4000001000000         ,\n        \"assetID\": \"AVAX\",\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -555,18 +555,18 @@
 								"X"
 							]
 						},
-						"description": "Create a new variable-cap, fungible asset. No units of the asset exist at initialization. Minters can mint units of this asset using `createMintTx`, `signMintTx` and `issueTx`. The asset can be sent with `avm.send`. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-createvariablecapasset)"
+						"description": "Export a non-AVAX asset from the X-Chain to the C-Chain. After calling this method, you must call the C-Chain’s `import` method to complete the transfer. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmexport)"
 					},
 					"response": []
 				},
 				{
-					"name": "export",
+					"name": "exportKey - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.export\",\n    \"params\" :{\n        \"from\": [\"{{xchainAddress}}\"],\n        \"to\":\"{{cchainbech32address}}\",\n        \"amount\": 4000001000000         ,\n        \"assetID\": \"AVAX\",\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.exportKey\",\n    \"params\" :{\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\",\n        \"address\": \"{{xchainAddress}}\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -584,18 +584,18 @@
 								"X"
 							]
 						},
-						"description": "Export a non-AVAX asset from the X-Chain to the C-Chain. After calling this method, you must call the C-Chain’s `import` method to complete the transfer. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmexport)"
+						"description": "Get the private key that controls a given address.  \nThe returned private key can be added to a user with `avm.importKey`. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmexportkey)"
 					},
 					"response": []
 				},
 				{
-					"name": "exportKey",
+					"name": "getAddressTxs - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.exportKey\",\n    \"params\" :{\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\",\n        \"address\": \"{{xchainAddress}}\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.getAddressTxs\",\n    \"params\" :{\n        \"address\":\"{{xchainAddress}}\",\n        \"assetID\": \"AVAX\",\n        \"pageSize\": 20,\n        \"cursor\": 0\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -613,18 +613,18 @@
 								"X"
 							]
 						},
-						"description": "Get the private key that controls a given address.\nThe returned private key can be added to a user with `avm.importKey`. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-exportkey)"
+						"description": "Returns all transactions that change the balance of the given address. A transaction is said to change an address's balance if either is true:\n\n- A UTXO that the transaction consumes was at least partially owned by the address.\n- A UTXO that the transaction produces is at least partially owned by the address.\n    \n\nNote: Indexing (`index-transactions`) must be enabled in the X-chain config. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgetaddresstxs)"
 					},
 					"response": []
 				},
 				{
-					"name": "getAddressTxs",
+					"name": "getAllBalances - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.getAddressTxs\",\n    \"params\" :{\n        \"address\":\"{{xchainAddress}}\",\n        \"assetID\": \"AVAX\",\n        \"pageSize\": 20,\n        \"cursor\": 0\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.getAllBalances\",\n    \"params\" :{\n        \"address\":\"{{xchainAddress}}\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -642,36 +642,7 @@
 								"X"
 							]
 						},
-						"description": "Returns all transactions that change the balance of the given address. A transaction is said to change an address's balance if either is true:\n\n*   A UTXO that the transaction consumes was at least partially owned by the address.\n*   A UTXO that the transaction produces is at least partially owned by the address.\n    \n\nNote: Indexing (`index-transactions`) must be enabled in the X-chain config. [More info](https://docs.avax.network/build/avalanchego-apis/x-chain#avm-get-address-txs-api)"
-					},
-					"response": []
-				},
-				{
-					"name": "getAllBalances",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.getAllBalances\",\n    \"params\" :{\n        \"address\":\"{{xchainAddress}}\"\n    }\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseURL}}/ext/bc/X",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"ext",
-								"bc",
-								"X"
-							]
-						},
-						"description": "Get the balances of all assets controlled by a given address. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-getallbalances)"
+						"description": "Get the balances of all assets controlled by a given address. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgetallbalances)"
 					},
 					"response": []
 				},
@@ -700,38 +671,18 @@
 								"X"
 							]
 						},
-						"description": "Get information about an asset. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-getassetdescription)"
+						"description": "Get information about an asset. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgetassetdescription)"
 					},
 					"response": []
 				},
 				{
-					"name": "getBalance",
+					"name": "getBalance - DEPRECATED",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
 								"exec": [
-									"var template = `",
-									"    <table bgcolor=\"#FFFFFF\">",
-									"        <tr>",
-									"            <th>Name</th>",
-									"            <th>Email</th>",
-									"        </tr>",
-									"",
-									"        {{#each response}}",
-									"            <tr>",
-									"                <td>{{name}}</td>",
-									"                <td>{{email}}</td>",
-									"            </tr>",
-									"        {{/each}}",
-									"    </table>",
-									"`;",
-									"",
-									"// Set visualizer",
-									"pm.visualizer.set(template, {",
-									"    // Pass the response body parsed as JSON as `data`",
-									"    response: pm.response.json()",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -742,7 +693,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"jsonrpc\":\"2.0\",\n  \"id\"     : 1,\n  \"method\" :\"avm.getBalance\",\n  \"params\" :{\n      \"address\":\"{{xchainAddress}}\",\n      \"assetID\": \"{{avaxAssetId}}\"\n  }\n} ",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n  \"jsonrpc\":\"2.0\",\n  \"id\"     : 1,\n  \"method\" :\"avm.getBalance\",\n  \"params\" :{\n      \"address\":\"{{xchainAddress}}\",\n      \"assetID\": \"{{avaxAssetId}}\"\n  }\n} ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -760,7 +711,127 @@
 								"X"
 							]
 						},
-						"description": "Get the balance of an asset controlled by a given address. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-getbalance)"
+						"description": "Get the balance of an asset controlled by a given address. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgetbalance)"
+					},
+					"response": []
+				},
+				{
+					"name": "getBlock",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.getBlock\",\n    \"params\" :{\n        \"blockID\": \"{{xchainBlockID}}\",\n        \"encoding\": \"hex\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ext/bc/X",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ext",
+								"bc",
+								"X"
+							]
+						},
+						"description": "Returns the block with the given id. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgetblock)"
+					},
+					"response": []
+				},
+				{
+					"name": "getBlockByHeight",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.getBlockByHeight\",\n    \"params\" :{\n        \"height\": {{xhcainBlockHeight}},\n        \"encoding\": \"hex\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ext/bc/X",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ext",
+								"bc",
+								"X"
+							]
+						},
+						"description": "Returns block at the given height. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgetblockbyheight)"
+					},
+					"response": []
+				},
+				{
+					"name": "getHeight",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.getHeight\",\n    \"params\" :{}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ext/bc/X",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ext",
+								"bc",
+								"X"
+							]
+						},
+						"description": "Returns the height of the last accepted block. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgetheight)"
 					},
 					"response": []
 				},
@@ -789,18 +860,18 @@
 								"X"
 							]
 						},
-						"description": "Returns the specified transaction [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-gettx)"
+						"description": "Returns the specified transaction [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgettx)"
 					},
 					"response": []
 				},
 				{
-					"name": "getTxStatus",
+					"name": "getTxStatus - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"avm.getTxStatus\",\n    \"params\": {\n        \"txID\": \"{{txID}}\"\n    }\n}",
+							"raw": "//Deprecated as of v1.10.0.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"avm.getTxStatus\",\n    \"params\": {\n        \"txID\": \"{{txID}}\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -818,7 +889,7 @@
 								"X"
 							]
 						},
-						"description": "Get the status of a transaction sent to the network. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-gettxstatus)"
+						"description": "Get the status of a transaction sent to the network. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgettxstatus)"
 					},
 					"response": []
 				},
@@ -847,18 +918,18 @@
 								"X"
 							]
 						},
-						"description": "Get the UTXOs that reference a given address. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-getutxos)"
+						"description": "Get the UTXOs that reference a given address. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmgetutxos)"
 					},
 					"response": []
 				},
 				{
-					"name": "import",
+					"name": "import - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.import\",\n    \"params\" :{\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\",\n        \"sourceChain\": \"P\",\n        \"to\":\"{{xchainAddress}}\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.import\",\n    \"params\" :{\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\",\n        \"sourceChain\": \"P\",\n        \"to\":\"{{xchainAddress}}\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -876,18 +947,18 @@
 								"X"
 							]
 						},
-						"description": "Finalize a transfer of AVAX from either the P-Chain to the X-Chain or the C-Chain to the X-Chain.\n\nBefore this method is called, you must call either the P-Chain’s `exportAVAX` method or the C-Chain’s `exportAVAX` method to initiate the transfer. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmimportavax)"
+						"description": "Finalize a transfer of AVAX from either the P-Chain to the X-Chain or the C-Chain to the X-Chain.\n\nBefore this method is called, you must call either the P-Chain’s `exportAVAX` method or the C-Chain’s `exportAVAX` method to initiate the transfer. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmimport)"
 					},
 					"response": []
 				},
 				{
-					"name": "importKey",
+					"name": "importKey - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.importKey\",\n    \"params\" :{\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\",\n        \"privateKey\":\"{{privkey}}\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.importKey\",\n    \"params\" :{\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\",\n        \"privateKey\":\"{{privkey}}\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -905,7 +976,7 @@
 								"X"
 							]
 						},
-						"description": "Give a user control over an address by providing the private key that controls the address. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-importkey)"
+						"description": "Give a user control over an address by providing the private key that controls the address. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmimportkey)"
 					},
 					"response": []
 				},
@@ -934,18 +1005,18 @@
 								"X"
 							]
 						},
-						"description": "Send a signed transaction to the network. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-issuetx)"
+						"description": "Send a signed transaction to the network. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmissuetx)"
 					},
 					"response": []
 				},
 				{
-					"name": "listAddresses",
+					"name": "listAddresses - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"avm.listAddresses\",\n    \"params\": {\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"avm.listAddresses\",\n    \"params\": {\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -963,18 +1034,18 @@
 								"X"
 							]
 						},
-						"description": "List addresses controlled by the given user. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-listaddresses)"
+						"description": "List addresses controlled by the given user. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmlistaddresses)"
 					},
 					"response": []
 				},
 				{
-					"name": "mint",
+					"name": "mint - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.mint\",\n    \"params\" :{\n        \"amount\": 10000000,\n        \"assetID\": \"2qnR9pLQTDZ9boSbcrcjS4n1DJJkzbkNsJzgwYvmRy8uv47fZT\",\n        \"from\": [\"{{xchainAddress}}\"],\n        \"to\": \"{{xchainAddress}}\",\n        \"minters\": [\n            \"{{xchainAddress}}\"\n        ],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\" \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.mint\",\n    \"params\" :{\n        \"amount\": 10000000,\n        \"assetID\": \"2qnR9pLQTDZ9boSbcrcjS4n1DJJkzbkNsJzgwYvmRy8uv47fZT\",\n        \"from\": [\"{{xchainAddress}}\"],\n        \"to\": \"{{xchainAddress}}\",\n        \"minters\": [\n            \"{{xchainAddress}}\"\n        ],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\" \n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -992,18 +1063,18 @@
 								"X"
 							]
 						},
-						"description": "Create an unsigned transaction to mint more of a variable-cap asset (an asset created with `avm.createVariableCapAsset`.) [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-mint)"
+						"description": "Create an unsigned transaction to mint more of a variable-cap asset (an asset created with `avm.createVariableCapAsset`.) [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmmint)"
 					},
 					"response": []
 				},
 				{
-					"name": "mintNFT",
+					"name": "mintNFT - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.mintNFT\",\n    \"params\" :{\n        \"assetID\":\"2KGdt2HpFKpTH5CtGZjYt5XPWs6Pv9DLoRBhiFfntbezdRvZWP\",\n        \"payload\":\"2EWh72jYQvEJF9NLk\",\n        \"from\": [\"{{xchainAddress}}\"],\n        \"to\":\"{{xchainAddress}}\",\n        \"minters\":[\n            \"{{xchainAddress}}\"\n        ],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" ,\n        \"encoding\": \"hex\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"avm.mintNFT\",\n    \"params\" :{\n        \"assetID\":\"2KGdt2HpFKpTH5CtGZjYt5XPWs6Pv9DLoRBhiFfntbezdRvZWP\",\n        \"payload\":\"2EWh72jYQvEJF9NLk\",\n        \"from\": [\"{{xchainAddress}}\"],\n        \"to\":\"{{xchainAddress}}\",\n        \"minters\":[\n            \"{{xchainAddress}}\"\n        ],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" ,\n        \"encoding\": \"hex\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1021,18 +1092,18 @@
 								"X"
 							]
 						},
-						"description": "Mint more of a non-fungible asset (an asset created with `avm.createNFTAsset`.) [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-mintnft)"
+						"description": "Mint more of a non-fungible asset (an asset created with `avm.createNFTAsset`.) [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmmintnft)"
 					},
 					"response": []
 				},
 				{
-					"name": "send",
+					"name": "send - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.send\",\n    \"params\" :{ \n        \"assetID\" : \"{{avaxAssetId}}\",\n        \"amount\"  : 2000000000,\n        \"from\"    : [\"{{xchainAddress}}\"],\n        \"to\"      : \"{{xchainAddress}}\",\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"memo\"    : \"\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\" \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.send\",\n    \"params\" :{ \n        \"assetID\" : \"{{avaxAssetId}}\",\n        \"amount\"  : 2000000000,\n        \"from\"    : [\"{{xchainAddress}}\"],\n        \"to\"      : \"{{xchainAddress}}\",\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"memo\"    : \"\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\" \n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1050,18 +1121,18 @@
 								"X"
 							]
 						},
-						"description": "Send a quantity of an asset to an address. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-send)"
+						"description": "Send a quantity of an asset to an address. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmsend)"
 					},
 					"response": []
 				},
 				{
-					"name": "sendMultiple",
+					"name": "sendMultiple - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.sendMultiple\",\n    \"params\" :{ \n        \"outputs\": [\n            {\n                \"assetID\" : \"{{avaxAssetId}}\",\n                \"to\"      : \"{{xchainAddress}}\",\n                \"amount\"  : 1000000000\n            }\n        ],\n        \"from\"    : [\"{{xchainAddress}}\"],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"memo\"    : \"{{memo}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\" \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.sendMultiple\",\n    \"params\" :{ \n        \"outputs\": [\n            {\n                \"assetID\" : \"{{avaxAssetId}}\",\n                \"to\"      : \"{{xchainAddress}}\",\n                \"amount\"  : 1000000000\n            }\n        ],\n        \"from\"    : [\"{{xchainAddress}}\"],\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"memo\"    : \"{{memo}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\" \n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1079,18 +1150,18 @@
 								"X"
 							]
 						},
-						"description": "Send a quantity of an asset to an address. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-sendmultiple)"
+						"description": "Send a quantity of an asset to an address. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmsendmultiple)"
 					},
 					"response": []
 				},
 				{
-					"name": "sendNFT",
+					"name": "sendNFT - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.sendNFT\",\n    \"params\" :{ \n        \"assetID\" :\"2KGdt2HpFKpTH5CtGZjYt5XPWs6Pv9DLoRBhiFfntbezdRvZWP\",\n        \"from\"    : [\"{{xchainAddress}}\"],\n        \"to\"      :\"{{xchainAddress}}\",\n        \"groupID\" : 0,\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"avm.sendNFT\",\n    \"params\" :{ \n        \"assetID\" :\"2KGdt2HpFKpTH5CtGZjYt5XPWs6Pv9DLoRBhiFfntbezdRvZWP\",\n        \"from\"    : [\"{{xchainAddress}}\"],\n        \"to\"      :\"{{xchainAddress}}\",\n        \"groupID\" : 0,\n        \"changeAddr\": \"{{xchainAddress}}\",\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\" \n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1108,7 +1179,7 @@
 								"X"
 							]
 						},
-						"description": "Send a quantity of an asset to an address. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-sendnft)"
+						"description": "Send a quantity of an asset to an address. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmsendnft)"
 					},
 					"response": []
 				}
@@ -1144,7 +1215,7 @@
 								"rpc"
 							]
 						},
-						"description": "Get the base fee for the next block. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#eth_baseFee)"
+						"description": "Get the base fee for the next block. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#eth_basefee)"
 					},
 					"response": []
 				},
@@ -1174,7 +1245,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting the most recent block number. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#getting-the-most-recent-block-number)"
+						"description": "Getting the most recent block number."
 					},
 					"response": []
 				},
@@ -1204,7 +1275,7 @@
 								"rpc"
 							]
 						},
-						"description": "Call a contract. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#call-a-contract)"
+						"description": "Call a contract."
 					},
 					"response": []
 				},
@@ -1234,7 +1305,7 @@
 								"rpc"
 							]
 						},
-						"description": "Not well documented in JSON-RPC references. See instead EIP694. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#getting-the-chain-id)"
+						"description": "Not well documented in JSON-RPC references. See instead EIP694."
 					},
 					"response": []
 				},
@@ -1264,7 +1335,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting an account’s non-AVAX balance. [More info](https://docs.avax.network/v1.0/en/api/evm/#getting-an-accounts-non-avax-balance)"
+						"description": "Getting an account’s non-AVAX balance. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#eth_getassetbalance)"
 					},
 					"response": []
 				},
@@ -1294,7 +1365,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting an account’s balance. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#getting-an-accounts-balance)"
+						"description": "Getting an account’s balance."
 					},
 					"response": []
 				},
@@ -1324,7 +1395,7 @@
 								"rpc"
 							]
 						},
-						"description": "Get the priority fee needed to be included in a block. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#eth_maxPriorityFeePerGas)"
+						"description": "Get the priority fee needed to be included in a block. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#eth_maxpriorityfeepergas)"
 					},
 					"response": []
 				},
@@ -1354,7 +1425,7 @@
 								"rpc"
 							]
 						},
-						"description": "Signing a transaction.\n\nThis method will create a signed transaction, but will not publish it automatically to the network. Instead, the `raw` result output should be used with `eth_sendRawTransaction` to execute the transaction. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#signing-a-transaction)"
+						"description": "Signing a transaction.\n\nThis method will create a signed transaction, but will not publish it automatically to the network. Instead, the `raw` result output should be used with `eth_sendRawTransaction` to execute the transaction."
 					},
 					"response": []
 				},
@@ -1384,7 +1455,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting an account’s nonce. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#getting-an-accounts-nonce)"
+						"description": "Getting an account’s nonce."
 					},
 					"response": []
 				},
@@ -1414,7 +1485,7 @@
 								"rpc"
 							]
 						},
-						"description": "Send a raw transaction.\n\nExample below shows a raw transaction published to the network and its associated transaction hash. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#send-a-raw-transaction)"
+						"description": "Send a raw transaction.\n\nExample below shows a raw transaction published to the network and its associated transaction hash."
 					},
 					"response": []
 				},
@@ -1444,7 +1515,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting a block by hash. [More info](https://docs.avax.network/build/apis/contract-chain-c-chain-api#getting-a-block-by-hash)"
+						"description": "Getting a block by hash."
 					},
 					"response": []
 				},
@@ -1474,7 +1545,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting a block by number. [More info](https://docs.avax.network/v1.0/en/api/evm/#getting-a-block-by-number)"
+						"description": "Getting a block by number."
 					},
 					"response": []
 				},
@@ -1504,7 +1575,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting a transaction by hash. [More info](https://docs.avax.network/v1.0/en/api/evm/#getting-a-transaction-by-hash)"
+						"description": "Getting a transaction by hash."
 					},
 					"response": []
 				},
@@ -1534,7 +1605,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting a transaction receipt. [More info](https://docs.avax.network/v1.0/en/api/evm/#getting-a-transaction-receipt)"
+						"description": "Getting a transaction receipt."
 					},
 					"response": []
 				},
@@ -1564,7 +1635,7 @@
 								"avax"
 							]
 						},
-						"description": "Send AVAX from the X-Chain to an account on the P-Chain.\nAfter calling this method, you must call the P-Chain’s `importAVAX` method to complete the transfer. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmexportavax)"
+						"description": "Send AVAX from the X-Chain to an account on the P-Chain.  \nAfter calling this method, you must call the P-Chain’s `importAVAX` method to complete the transfer. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaxexport)"
 					},
 					"response": []
 				},
@@ -1594,7 +1665,7 @@
 								"avax"
 							]
 						},
-						"description": "Send AVAX from the X-Chain to an account on the P-Chain.\nAfter calling this method, you must call the P-Chain’s `importAVAX` method to complete the transfer. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmexportavax)"
+						"description": "Send AVAX from the X-Chain to an account on the P-Chain.  \nAfter calling this method, you must call the P-Chain’s `importAVAX` method to complete the transfer. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaxexportavax)"
 					},
 					"response": []
 				},
@@ -1624,7 +1695,7 @@
 								"avax"
 							]
 						},
-						"description": "Get the private key that controls a given address.\nThe returned private key can be added to a user with `avm.importKey`. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmexportkey)\n\n"
+						"description": "Get the private key that controls a given address.  \nThe returned private key can be added to a user with `avm.importKey`. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaxexportkey)"
 					},
 					"response": []
 				},
@@ -1654,7 +1725,7 @@
 								"avax"
 							]
 						},
-						"description": "Returns the specified transaction [More info](https://docs.avax.network/v1.0/en/api/avm/#avmgetbalance)"
+						"description": "Returns the specified transaction [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaxgetatomictx)"
 					},
 					"response": []
 				},
@@ -1684,7 +1755,7 @@
 								"avax"
 							]
 						},
-						"description": "Get the status of a transaction sent to the network. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmgettxstatus)"
+						"description": "Get the status of a transaction sent to the network. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaxgetatomictxstatus)"
 					},
 					"response": []
 				},
@@ -1714,7 +1785,7 @@
 								"avax"
 							]
 						},
-						"description": "Get the UTXOs that reference a given address. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmgetutxos)"
+						"description": "Get the UTXOs that reference a given address. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaxgetutxos)"
 					},
 					"response": []
 				},
@@ -1744,7 +1815,7 @@
 								"avax"
 							]
 						},
-						"description": "Send AVAX from the X-Chain to an account on the P-Chain.\nAfter calling this method, you must call the P-Chain’s `importAVAX` method to complete the transfer. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmexportavax)"
+						"description": "Send AVAX from the X-Chain to an account on the P-Chain.  \nAfter calling this method, you must call the P-Chain’s `importAVAX` method to complete the transfer. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaximport)"
 					},
 					"response": []
 				},
@@ -1774,7 +1845,7 @@
 								"avax"
 							]
 						},
-						"description": "Import AVAX from the X-Chain to an account on the C-Chain.\nBefore calling this method, you must call the X-Chain’s `exportAVAX` method to initiate the transfer. [More info](https://docs.avax.network/v1.0/en/api/evm/#evmimportavax)"
+						"description": "Import AVAX from the X-Chain to an account on the C-Chain.  \nBefore calling this method, you must call the X-Chain’s `exportAVAX` method to initiate the transfer. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaximportavax)"
 					},
 					"response": []
 				},
@@ -1804,7 +1875,7 @@
 								"avax"
 							]
 						},
-						"description": "Give a user control over an address by providing the private key that controls the address. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmimportkey)"
+						"description": "Give a user control over an address by providing the private key that controls the address. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaximportkey)"
 					},
 					"response": []
 				},
@@ -1834,7 +1905,7 @@
 								"avax"
 							]
 						},
-						"description": "Send a signed transaction to the network. [More info](https://docs.avax.network/build/apis/exchange-chain-x-chain-api#avm-issuetx)"
+						"description": "Send a signed transaction to the network. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#avaxissuetx)"
 					},
 					"response": []
 				},
@@ -1864,7 +1935,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting the network ID. [More info](https://docs.avax.network/v1.0/en/api/evm/#getting-the-network-id)"
+						"description": "Getting the network ID."
 					},
 					"response": []
 				},
@@ -1954,7 +2025,7 @@
 								"rpc"
 							]
 						},
-						"description": "Listing accounts loaded in EVM node. [More info](https://docs.avax.network/v1.0/en/api/evm/#listing-accounts-loaded-in-evm-node)"
+						"description": "Listing accounts loaded in EVM node."
 					},
 					"response": []
 				},
@@ -1984,7 +2055,7 @@
 								"rpc"
 							]
 						},
-						"description": "Unlocking an account.\n\nPersonal accounts loaded directly in the EVM can only sign transactions while in an unlocked state. The example below unlocks the listed account address for 60 seconds. Note the associated passphrase `cheese` must be provided for authorization. [More info](https://docs.avax.network/v1.0/en/api/evm/#unlocking-an-account)"
+						"description": "Unlocking an account.\n\nPersonal accounts loaded directly in the EVM can only sign transactions while in an unlocked state. The example below unlocks the listed account address for 60 seconds. Note the associated passphrase `cheese` must be provided for authorization."
 					},
 					"response": []
 				},
@@ -2014,7 +2085,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting count of pending transactions.\n\n“Pending” transactions will be non-zero during periods of heavy network use. “Queued” transactions indicate transactions have been submitted with nonce values ahead of the next expected value for an address, which places them on hold until a transaction with the next expected nonce value is submitted. [More info](https://docs.avax.network/v1.0/en/api/evm/#getting-count-of-pending-transactions)"
+						"description": "Getting count of pending transactions.\n\n“Pending” transactions will be non-zero during periods of heavy network use. “Queued” transactions indicate transactions have been submitted with nonce values ahead of the next expected value for an address, which places them on hold until a transaction with the next expected nonce value is submitted."
 					},
 					"response": []
 				},
@@ -2044,7 +2115,7 @@
 								"rpc"
 							]
 						},
-						"description": "Getting the current client version. [More info](https://docs.avax.network/v1.0/en/api/evm/#getting-the-current-client-version)"
+						"description": "Getting the current client version."
 					},
 					"response": []
 				},
@@ -2074,7 +2145,7 @@
 								"rpc"
 							]
 						},
-						"description": "Calculate a cryptographic hash.\n\nThe input parameter contains hexidecimal bytes of arbitrary length. The example here uses the UTF-8 text string “snowstorm” converted to hexidecimal bytes. [More info](https://docs.avax.network/v1.0/en/api/evm/#calculate-a-cryptographic-hash)"
+						"description": "Calculate a cryptographic hash.\n\nThe input parameter contains hexidecimal bytes of arbitrary length. The example here uses the UTF-8 text string “snowstorm” converted to hexidecimal bytes."
 					},
 					"response": []
 				}
@@ -2108,7 +2179,7 @@
 								"health"
 							]
 						},
-						"description": "Get health check on this node. [More info](https://docs.avax.network/build/apis/health-api#health-getliveness)"
+						"description": "Get health check on this node. [More info](https://docs.avax.network/apis/avalanchego/apis/health#get-request)"
 					},
 					"response": []
 				}
@@ -2147,7 +2218,7 @@
 										"tx"
 									]
 								},
-								"description": "Get container by ID. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerbyid)"
+								"description": "Get container by ID. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerbyid)"
 							},
 							"response": []
 						},
@@ -2177,7 +2248,7 @@
 										"tx"
 									]
 								},
-								"description": "Get container by index. The first container accepted is at index 0, the second is at index 1, etc. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerbyindex)"
+								"description": "Get container by index. The first container accepted is at index 0, the second is at index 1, etc. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerbyindex)"
 							},
 							"response": []
 						},
@@ -2207,7 +2278,7 @@
 										"tx"
 									]
 								},
-								"description": "Returns containers with indices in [startIndex, startIndex+1, ... , startIndex + numToFetch - 1]. numToFetch must be in \\[0,1024\\] [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerrange)"
+								"description": "Returns containers with indices in \\[startIndex, startIndex+1, ... , startIndex + numToFetch - 1\\]. numToFetch must be in \\[0,1024\\] [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerrange)"
 							},
 							"response": []
 						},
@@ -2237,7 +2308,7 @@
 										"tx"
 									]
 								},
-								"description": "Get a container's index. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getindex)"
+								"description": "Get a container's index. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetindex)"
 							},
 							"response": []
 						},
@@ -2267,7 +2338,7 @@
 										"tx"
 									]
 								},
-								"description": "Get the most recently accepted container. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getlastaccepted)"
+								"description": "Get the most recently accepted container. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetlastaccepted)"
 							},
 							"response": []
 						},
@@ -2297,7 +2368,7 @@
 										"tx"
 									]
 								},
-								"description": "Returns true if the container is in this index. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.isaccepted)"
+								"description": "Returns true if the container is in this index. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexisaccepted)"
 							},
 							"response": []
 						}
@@ -2332,7 +2403,7 @@
 										"vtx"
 									]
 								},
-								"description": "Get container by ID. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerbyid)"
+								"description": "Get container by ID. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerbyid)"
 							},
 							"response": []
 						},
@@ -2362,7 +2433,7 @@
 										"vtx"
 									]
 								},
-								"description": "Get container by index. The first container accepted is at index 0, the second is at index 1, etc. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerbyindex)"
+								"description": "Get container by index. The first container accepted is at index 0, the second is at index 1, etc. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerbyindex)"
 							},
 							"response": []
 						},
@@ -2392,7 +2463,7 @@
 										"vtx"
 									]
 								},
-								"description": "Returns containers with indices in [startIndex, startIndex+1, ... , startIndex + numToFetch - 1]. numToFetch must be in \\[0,1024\\] [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerrange)"
+								"description": "Returns containers with indices in \\[startIndex, startIndex+1, ... , startIndex + numToFetch - 1\\]. numToFetch must be in \\[0,1024\\] [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerrange)"
 							},
 							"response": []
 						},
@@ -2422,7 +2493,7 @@
 										"vtx"
 									]
 								},
-								"description": "Get a container's index. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getindex)"
+								"description": "Get a container's index. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetindex)"
 							},
 							"response": []
 						},
@@ -2452,7 +2523,7 @@
 										"vtx"
 									]
 								},
-								"description": "Get the most recently accepted container. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getlastaccepted)"
+								"description": "Get the most recently accepted container. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetlastaccepted)"
 							},
 							"response": []
 						},
@@ -2482,7 +2553,7 @@
 										"vtx"
 									]
 								},
-								"description": "Returns true if the container is in this index. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.isaccepted)"
+								"description": "Returns true if the container is in this index. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexisaccepted)"
 							},
 							"response": []
 						}
@@ -2517,7 +2588,7 @@
 										"block"
 									]
 								},
-								"description": "Get container by ID. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerbyid)"
+								"description": "Get container by ID. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerbyid)"
 							},
 							"response": []
 						},
@@ -2547,7 +2618,7 @@
 										"block"
 									]
 								},
-								"description": "Get container by index. The first container accepted is at index 0, the second is at index 1, etc. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerbyindex)"
+								"description": "Get container by index. The first container accepted is at index 0, the second is at index 1, etc. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerbyindex)"
 							},
 							"response": []
 						},
@@ -2577,7 +2648,7 @@
 										"block"
 									]
 								},
-								"description": "Returns containers with indices in [startIndex, startIndex+1, ... , startIndex + numToFetch - 1]. numToFetch must be in \\[0,1024\\] [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerrange)"
+								"description": "Returns containers with indices in \\[startIndex, startIndex+1, ... , startIndex + numToFetch - 1\\]. numToFetch must be in \\[0,1024\\] [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerrange)"
 							},
 							"response": []
 						},
@@ -2607,7 +2678,7 @@
 										"block"
 									]
 								},
-								"description": "Get a container's index. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getindex)"
+								"description": "Get a container's index. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetindex)"
 							},
 							"response": []
 						},
@@ -2637,7 +2708,7 @@
 										"block"
 									]
 								},
-								"description": "Get the most recently accepted container. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getlastaccepted)"
+								"description": "Get the most recently accepted container. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetlastaccepted)"
 							},
 							"response": []
 						},
@@ -2667,7 +2738,7 @@
 										"block"
 									]
 								},
-								"description": "Returns true if the container is in this index. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.isaccepted)"
+								"description": "Returns true if the container is in this index. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexisaccepted)"
 							},
 							"response": []
 						}
@@ -2702,7 +2773,7 @@
 										"block"
 									]
 								},
-								"description": "Get container by ID. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerbyid)"
+								"description": "Get container by ID. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerbyid)"
 							},
 							"response": []
 						},
@@ -2732,7 +2803,7 @@
 										"block"
 									]
 								},
-								"description": "Get container by index. The first container accepted is at index 0, the second is at index 1, etc. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerbyindex)"
+								"description": "Get container by index. The first container accepted is at index 0, the second is at index 1, etc. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerbyindex)"
 							},
 							"response": []
 						},
@@ -2762,7 +2833,7 @@
 										"block"
 									]
 								},
-								"description": "Returns containers with indices in [startIndex, startIndex+1, ... , startIndex + numToFetch - 1]. numToFetch must be in \\[0,1024\\] [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getcontainerrange)"
+								"description": "Returns containers with indices in \\[startIndex, startIndex+1, ... , startIndex + numToFetch - 1\\]. numToFetch must be in \\[0,1024\\] [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetcontainerrange)"
 							},
 							"response": []
 						},
@@ -2792,7 +2863,7 @@
 										"block"
 									]
 								},
-								"description": "Get a container's index. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getindex)"
+								"description": "Get a container's index. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetindex)"
 							},
 							"response": []
 						},
@@ -2822,7 +2893,7 @@
 										"block"
 									]
 								},
-								"description": "Get the most recently accepted container. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.getlastaccepted)"
+								"description": "Get the most recently accepted container. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexgetlastaccepted)"
 							},
 							"response": []
 						},
@@ -2852,7 +2923,7 @@
 										"block"
 									]
 								},
-								"description": "Returns true if the container is in this index. [More info](https://docs.avax.network/build/avalanchego-apis/index-api#index.isaccepted)"
+								"description": "Returns true if the container is in this index. [More info](https://docs.avax.network/apis/avalanchego/apis/index-api#indexisaccepted)"
 							},
 							"response": []
 						}
@@ -2888,7 +2959,7 @@
 								"info"
 							]
 						},
-						"description": "Check whether a given chain is done bootstrapping. [More info](https://docs.avax.network/build/avalanchego-apis/info-api#infoisbootstrapped)"
+						"description": "Check whether a given chain is done bootstrapping. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infoisbootstrapped)"
 					},
 					"response": []
 				},
@@ -2916,7 +2987,7 @@
 								"info"
 							]
 						},
-						"description": "Given a blockchain’s alias, get its ID. [More info](https://docs.avax.network/build/avalanchego-apis/info#infogetblockchainid)"
+						"description": "Given a blockchain’s alias, get its ID. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infogetblockchainid)"
 					},
 					"response": []
 				},
@@ -2944,7 +3015,7 @@
 								"info"
 							]
 						},
-						"description": "Get the ID of the network this node is participating in. [More info](https://docs.avax.network/build/apis/info-api#info-getnetworkid)"
+						"description": "Get the ID of the network this node is participating in. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infogetnetworkid)"
 					},
 					"response": []
 				},
@@ -2972,7 +3043,7 @@
 								"info"
 							]
 						},
-						"description": "Get the name of the network this node is participating in. [More info](https://docs.avax.network/build/apis/info-api#info-getnetworkname)"
+						"description": "Get the name of the network this node is participating in. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infogetnetworkname)"
 					},
 					"response": []
 				},
@@ -3000,7 +3071,7 @@
 								"info"
 							]
 						},
-						"description": "Get the name of the network this node is participating in. [More info](https://docs.avax.network/build/apis/info-api#info-getnodeid)"
+						"description": "Get the name of the network this node is participating in. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infogetnodeid)"
 					},
 					"response": []
 				},
@@ -3028,7 +3099,7 @@
 								"info"
 							]
 						},
-						"description": "Get the IP of this node. [More info](https://docs.avax.network/build/apis/info-api#info-getnodeip)"
+						"description": "Get the IP of this node. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infogetnodeip)"
 					},
 					"response": []
 				},
@@ -3056,7 +3127,7 @@
 								"info"
 							]
 						},
-						"description": "Get the version of this node. [More info](https://docs.avax.network/build/apis/info-api#info-getnodeversion)"
+						"description": "Get the version of this node. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infogetnodeversion)"
 					},
 					"response": []
 				},
@@ -3084,7 +3155,7 @@
 								"info"
 							]
 						},
-						"description": "Get the transaction fee of the network. [More info](https://docs.avax.network/v1.0/en/api/info/#infogettxfee)"
+						"description": "Get the transaction fee of the network. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infogettxfee)"
 					},
 					"response": []
 				},
@@ -3112,7 +3183,7 @@
 								"info"
 							]
 						},
-						"description": "Get the virtual machines installed on this node. [More info](https://docs.avax.network/build/avalanchego-apis/info#infogetvms)"
+						"description": "Get the virtual machines installed on this node. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infogetvms)"
 					},
 					"response": []
 				},
@@ -3140,7 +3211,7 @@
 								"info"
 							]
 						},
-						"description": "Get description of peer connections. [More info](https://docs.avax.network/build/apis/info-api#info-peers)"
+						"description": "Get description of peer connections. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infopeers)"
 					},
 					"response": []
 				},
@@ -3168,7 +3239,7 @@
 								"info"
 							]
 						},
-						"description": "Returns the network's observed uptime of this node. [More info](https://docs.avax.network/build/avalanchego-apis/info-api#info-uptime)"
+						"description": "Returns the network's observed uptime of this node. [More info](https://docs.avax.network/apis/avalanchego/apis/info#infouptime)"
 					},
 					"response": []
 				}
@@ -3179,13 +3250,13 @@
 			"name": "IPC",
 			"item": [
 				{
-					"name": "publishBlockchain",
+					"name": "publishBlockchain - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"ipcs.publishBlockchain\",\n    \"params\":{\n        \"blockchainID\":\"{{avalanceBlockchainId}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"ipcs.publishBlockchain\",\n    \"params\":{\n        \"blockchainID\":\"{{avalanceBlockchainId}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3202,18 +3273,18 @@
 								"ipcs"
 							]
 						},
-						"description": "Register a blockchain so it publishes accepted vertices to a Unix domain socket. [More info](https://docs.avax.network/build/apis/ipc-api#ipcs-publishblockchain)"
+						"description": "Register a blockchain so it publishes accepted vertices to a Unix domain socket. [More info](https://docs.avax.network/apis/avalanchego/apis/ipc#ipcspublishblockchain)"
 					},
 					"response": []
 				},
 				{
-					"name": "unpublishBlockchain",
+					"name": "unpublishBlockchain - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"ipcs.unpublishBlockchain\",\n    \"params\":{\n        \"blockchainID\":\"{{avalanceBlockchainId}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"ipcs.unpublishBlockchain\",\n    \"params\":{\n        \"blockchainID\":\"{{avalanceBlockchainId}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3230,7 +3301,7 @@
 								"ipcs"
 							]
 						},
-						"description": "Deregister a blockchain so that it no longer publishes to a Unix domain socket. [More info](https://docs.avax.network/build/apis/ipc-api#ipcs-unpublishblockchain)"
+						"description": "Deregister a blockchain so that it no longer publishes to a Unix domain socket. [More info](https://docs.avax.network/apis/avalanchego/apis/ipc#ipcsunpublishblockchain)"
 					},
 					"response": []
 				}
@@ -3241,13 +3312,13 @@
 			"name": "Keystore",
 			"item": [
 				{
-					"name": "createUser",
+					"name": "createUser - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"keystore.createUser\",\n    \"params\" :{\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"keystore.createUser\",\n    \"params\" :{\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3264,18 +3335,18 @@
 								"keystore"
 							]
 						},
-						"description": "Create a new user with the specified username and password. [More info](https://docs.avax.network/build/apis/keystore-api#keystore-createuser)"
+						"description": "Create a new user with the specified username and password. [More info](https://docs.avax.network/apis/avalanchego/apis/keystore#keystorecreateuser)"
 					},
 					"response": []
 				},
 				{
-					"name": "deleteUser",
+					"name": "deleteUser - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"keystore.deleteUser\",\n    \"params\" : {\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"keystore.deleteUser\",\n    \"params\" : {\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3292,18 +3363,18 @@
 								"keystore"
 							]
 						},
-						"description": "Delete a user. [More info](https://docs.avax.network/build/apis/keystore-api#keystore-deleteuser)"
+						"description": "Delete a user. [More info](https://docs.avax.network/apis/avalanchego/apis/keystore#keystoredeleteuser)"
 					},
 					"response": []
 				},
 				{
-					"name": "exportUser",
+					"name": "exportUser  - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"keystore.exportUser\",\n    \"params\": {\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\",\n        \"encoding\": \"hex\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 1,\n    \"method\": \"keystore.exportUser\",\n    \"params\": {\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\",\n        \"encoding\": \"hex\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3320,18 +3391,18 @@
 								"keystore"
 							]
 						},
-						"description": "Export a user. The user can be imported to another node with `keystore.importUser`. The user’s password remains encrypted. [More info](https://docs.avax.network/build/apis/keystore-api#keystore-exportuser)"
+						"description": "Export a user. The user can be imported to another node with `keystore.importUser`. The user’s password remains encrypted. [More info](https://docs.avax.network/apis/avalanchego/apis/keystore#keystoreexportuser)"
 					},
 					"response": []
 				},
 				{
-					"name": "importUser",
+					"name": "importUser - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"keystore.importUser\",\n    \"params\" :{\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\",\n        \"user\"    :\"0x0000b79e54bb3452985874844fd02ce47671725850111b14d5b06d4b3e142ec852b39d1be2bdead684977bc0a1bfa6eeb06e000000040000004066687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f292500000000000000000000000000000000000000000000000000000000000000000000004c00000000002a92a15386259d71410fe602a9a1e2207a7afae3efd8d86f142577405476e5337a0736ba095b0fe911cb3100000018226dc5aec589008bc87ce142d5488d942f7e9d37374be99f0000003466687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f29253cb7d3842e8cee6a0ebd09f1fe884f6861e1b29c00000052000000000030b46ad90c1ef2f22282a9ab9c045cf190506148a7afcf4e94360e7e4109ef9abbc4aa97dd84533a5b081c0da489e205f00000001825e30947b222849b4f69b0a1eaf1dd49c82f5b64995d3c4e00000040faa57ee922f01eb75ca224d2e8aaf9cb60973d011e0ac08c7b3798c3aacf79de00000000000000000000000000000000000000000000000000000000000000000000004c00000000002a098545758bbf938acd508762ffff24bd2e8e0f80313fb0957c51fea30df6f304a94568c30dfb06257deb00000018e722d87e7d5964aa8a8772b0985d0723d398681ef29fad7900000034faa57ee922f01eb75ca224d2e8aaf9cb60973d011e0ac08c7b3798c3aacf79de3cb7d3842e8cee6a0ebd09f1fe884f6861e1b29c00000052000000000030722156f457680f16cf010d7cb3b350aaf210ae9ed58aaf89017f0046c5380ddf76fb944a6ff9a287a6a6e6c6303c751a000000183edfb66b8b01e6197507cde7e4909f816d3accf753155f96b346b48c\",\n        \"encoding\": \"hex\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"keystore.importUser\",\n    \"params\" :{\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\",\n        \"user\"    :\"0x0000b79e54bb3452985874844fd02ce47671725850111b14d5b06d4b3e142ec852b39d1be2bdead684977bc0a1bfa6eeb06e000000040000004066687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f292500000000000000000000000000000000000000000000000000000000000000000000004c00000000002a92a15386259d71410fe602a9a1e2207a7afae3efd8d86f142577405476e5337a0736ba095b0fe911cb3100000018226dc5aec589008bc87ce142d5488d942f7e9d37374be99f0000003466687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f29253cb7d3842e8cee6a0ebd09f1fe884f6861e1b29c00000052000000000030b46ad90c1ef2f22282a9ab9c045cf190506148a7afcf4e94360e7e4109ef9abbc4aa97dd84533a5b081c0da489e205f00000001825e30947b222849b4f69b0a1eaf1dd49c82f5b64995d3c4e00000040faa57ee922f01eb75ca224d2e8aaf9cb60973d011e0ac08c7b3798c3aacf79de00000000000000000000000000000000000000000000000000000000000000000000004c00000000002a098545758bbf938acd508762ffff24bd2e8e0f80313fb0957c51fea30df6f304a94568c30dfb06257deb00000018e722d87e7d5964aa8a8772b0985d0723d398681ef29fad7900000034faa57ee922f01eb75ca224d2e8aaf9cb60973d011e0ac08c7b3798c3aacf79de3cb7d3842e8cee6a0ebd09f1fe884f6861e1b29c00000052000000000030722156f457680f16cf010d7cb3b350aaf210ae9ed58aaf89017f0046c5380ddf76fb944a6ff9a287a6a6e6c6303c751a000000183edfb66b8b01e6197507cde7e4909f816d3accf753155f96b346b48c\",\n        \"encoding\": \"hex\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3348,18 +3419,18 @@
 								"keystore"
 							]
 						},
-						"description": "Import a user. `password` must match the user’s password. `username` doesn’t have to match the username `user` had when it was exported. [More info](https://docs.avax.network/build/apis/keystore-api#keystore-importuser)"
+						"description": "Import a user. `password` must match the user’s password. `username` doesn’t have to match the username `user` had when it was exported. [More info](https://docs.avax.network/apis/avalanchego/apis/keystore#keystoreimportuser)"
 					},
 					"response": []
 				},
 				{
-					"name": "listUsers",
+					"name": "listUsers - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"keystore.listUsers\"\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"keystore.listUsers\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3376,7 +3447,7 @@
 								"keystore"
 							]
 						},
-						"description": "List the users in this keystore. [More info](https://docs.avax.network/build/apis/keystore-api#keystore-listusers)"
+						"description": "List the users in this keystore. [More info](https://docs.avax.network/apis/avalanchego/apis/keystore#keystorelistusers)"
 					},
 					"response": []
 				}
@@ -3405,7 +3476,7 @@
 								"metrics"
 							]
 						},
-						"description": "To get the node metrics. [More info](https://docs.avax.network/build/apis/metrics-api)"
+						"description": "To get the node metrics. [More info](https://docs.avax.network/apis/avalanchego/apis/metrics)"
 					},
 					"response": []
 				}
@@ -3416,13 +3487,13 @@
 			"name": "PlatformVM",
 			"item": [
 				{
-					"name": "addDelegator",
+					"name": "addDelegator - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.addDelegator\",\n    \"params\": {\n        \"nodeId\":\"{{avalancheNodeId}}\",\n        \"startTime\":1613347036,\n        \"endTime\":1631215800,\n        \"stakeAmount\":200000000000,\n        \"rewardAddress\": \"{{pchainAddress}}\",\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.addDelegator\",\n    \"params\": {\n        \"nodeId\":\"{{avalancheNodeId}}\",\n        \"startTime\":1613347036,\n        \"endTime\":1631215800,\n        \"stakeAmount\":200000000000,\n        \"rewardAddress\": \"{{pchainAddress}}\",\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3440,18 +3511,18 @@
 								"P"
 							]
 						},
-						"description": "Add a delegator to the Default Subnet.\n\nA delegator stakes AVAX and specifies a validator (the delegatee) to validate on their behalf. The delegatee has an increased probability of being sampled by other validators (weight) in proportion to the stake delegated to them.\n\nThe delegatee charges a fee to the delegator; the former receives a percentage of the delegator’s validation reward (if any.)\n\nThe delegation period must be a subset of the perdiod that the delegatee validates the Default Subnet. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformadddefaultsubnetdelegator)"
+						"description": "Add a delegator to the Default Subnet.\n\nA delegator stakes AVAX and specifies a validator (the delegatee) to validate on their behalf. The delegatee has an increased probability of being sampled by other validators (weight) in proportion to the stake delegated to them.\n\nThe delegatee charges a fee to the delegator; the former receives a percentage of the delegator’s validation reward (if any.)\n\nThe delegation period must be a subset of the perdiod that the delegatee validates the Default Subnet. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformadddelegator)"
 					},
 					"response": []
 				},
 				{
-					"name": "addSubnetValidator",
+					"name": "addSubnetValidator - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.addSubnetValidator\",\n    \"params\": {\n        \"nodeID\":\"{{avalancheNodeId}}\",\n        \"subnetID\":\"{{avalancheSubnetId}}\",\n        \"startTime\":1625782598,\n        \"endTime\":1627078419,\n        \"weight\":20,\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.addSubnetValidator\",\n    \"params\": {\n        \"nodeID\":\"{{avalancheNodeId}}\",\n        \"subnetID\":\"{{avalancheSubnetId}}\",\n        \"startTime\":1625782598,\n        \"endTime\":1627078419,\n        \"weight\":20,\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3469,18 +3540,18 @@
 								"P"
 							]
 						},
-						"description": "Add a validator to a Subnet other than the Default Subnet. The validator must validate the Default Subnet for the entire duration they validate this Subnet. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformaddnondefaultsubnetvalidator)"
+						"description": "Add a validator to a Subnet other than the Default Subnet. The validator must validate the Default Subnet for the entire duration they validate this Subnet. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformaddsubnetvalidator)"
 					},
 					"response": []
 				},
 				{
-					"name": "addValidator",
+					"name": "addValidator - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.addValidator\",\n    \"params\": {\n        \"nodeID\":\"{{avalancheNodeId}}\",\n        \"startTime\":1606245174,\n        \"endTime\":1608837056,\n        \"stakeAmount\":2000000000000,\n        \"rewardAddress\": \"{{pchainAddress}}\",\n        \"delegationFeeRate\":10,\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.addValidator\",\n    \"params\": {\n        \"nodeID\":\"{{avalancheNodeId}}\",\n        \"startTime\":1606245174,\n        \"endTime\":1608837056,\n        \"stakeAmount\":2000000000000,\n        \"rewardAddress\": \"{{pchainAddress}}\",\n        \"delegationFeeRate\":10,\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3498,18 +3569,18 @@
 								"P"
 							]
 						},
-						"description": "Add a validator to the Default Subnet. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformadddefaultsubnetvalidator)"
+						"description": "Add a validator to the Default Subnet. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformaddvalidator)"
 					},
 					"response": []
 				},
 				{
-					"name": "createAddress",
+					"name": "createAddress - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.createAddress\",\n    \"params\": {\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.createAddress\",\n    \"params\": {\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3527,18 +3598,18 @@
 								"P"
 							]
 						},
-						"description": "Add a delegator to the Default Subnet.\n\nA delegator stakes AVAX and specifies a validator (the delegatee) to validate on their behalf. The delegatee has an increased probability of being sampled by other validators (weight) in proportion to the stake delegated to them.\n\nThe delegatee charges a fee to the delegator; the former receives a percentage of the delegator’s validation reward (if any.)\n\nThe delegation period must be a subset of the perdiod that the delegatee validates the Default Subnet. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformadddefaultsubnetdelegator)"
+						"description": "Add a delegator to the Default Subnet.\n\nA delegator stakes AVAX and specifies a validator (the delegatee) to validate on their behalf. The delegatee has an increased probability of being sampled by other validators (weight) in proportion to the stake delegated to them.\n\nThe delegatee charges a fee to the delegator; the former receives a percentage of the delegator’s validation reward (if any.)\n\nThe delegation period must be a subset of the perdiod that the delegatee validates the Default Subnet. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformcreateaddress)"
 					},
 					"response": []
 				},
 				{
-					"name": "createBlockchain",
+					"name": "createBlockchain - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.createBlockchain\",\n    \"params\" : {\n        \"vmID\":\"avm\",\n        \"SubnetID\":\"{{avalancheSubnetId}}\",\n        \"name\":\"My new avm\",\n        \"genesisData\": \"111115LHK2ZCYttSKPmmhsTDSuKiCkmHz65nUS1YqybvjirwGLLt376k1RwnTt72WobPqrG7rmgrKVqSq6VxDsKXYGnRmfhdLCEhsYjM\",\n        \"encoding\": \"hex\",\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.createBlockchain\",\n    \"params\" : {\n        \"vmID\":\"avm\",\n        \"SubnetID\":\"{{avalancheSubnetId}}\",\n        \"name\":\"My new avm\",\n        \"genesisData\": \"111115LHK2ZCYttSKPmmhsTDSuKiCkmHz65nUS1YqybvjirwGLLt376k1RwnTt72WobPqrG7rmgrKVqSq6VxDsKXYGnRmfhdLCEhsYjM\",\n        \"encoding\": \"hex\",\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3556,18 +3627,18 @@
 								"P"
 							]
 						},
-						"description": "Create a new blockchain. Currently only supports creation of new instances of the AVM and the Timestamp VM. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformcreateblockchain)"
+						"description": "Create a new blockchain. Currently only supports creation of new instances of the AVM and the Timestamp VM. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformcreateblockchain)"
 					},
 					"response": []
 				},
 				{
-					"name": "createSubnet",
+					"name": "createSubnet - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.createSubnet\",\n    \"params\": {\n        \"controlKeys\":[\n            \"{{pchainAddress}}\"\n        ],\n        \"threshold\":1,\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\":\"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.createSubnet\",\n    \"params\": {\n        \"controlKeys\":[\n            \"{{pchainAddress}}\"\n        ],\n        \"threshold\":1,\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\":\"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3585,18 +3656,18 @@
 								"P"
 							]
 						},
-						"description": "Create an unsigned transaction to create a new Subnet.\n\nThe unsigned transaction must be signed with the key of the account paying the transaction fee.\n\nThe Subnet’s ID is the ID of the transaction that creates it (ie the response from `issueTx` when issuing the signed transaction. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformcreatesubnet)"
+						"description": "Create an unsigned transaction to create a new Subnet.\n\nThe unsigned transaction must be signed with the key of the account paying the transaction fee.\n\nThe Subnet’s ID is the ID of the transaction that creates it (ie the response from `issueTx` when issuing the signed transaction. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformcreatesubnet)"
 					},
 					"response": []
 				},
 				{
-					"name": "exportAVAX",
+					"name": "exportAVAX - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.exportAVAX\",\n    \"params\": {\n        \"to\":\"{{xchainAddress}}\",\n        \"amount\":54321,\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.exportAVAX\",\n    \"params\": {\n        \"to\":\"{{xchainAddress}}\",\n        \"amount\":54321,\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\",\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3614,18 +3685,18 @@
 								"P"
 							]
 						},
-						"description": "Send AVAX from an account on the C-Chain to an address on the X-Chain.\nThis transaction must be signed with the key of the account that the AVAX is sent from and which pays the transaction fee.\nAfter issuing this transaction, you must call the X-Chain’s `importAVA` method to complete the transfer. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformexportavax)"
+						"description": "Send AVAX from an account on the C-Chain to an address on the X-Chain.  \nThis transaction must be signed with the key of the account that the AVAX is sent from and which pays the transaction fee.  \nAfter issuing this transaction, you must call the X-Chain’s `importAVA` method to complete the transfer. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformexportavax)"
 					},
 					"response": []
 				},
 				{
-					"name": "exportKey",
+					"name": "exportKey - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.exportKey\",\n    \"params\" :{\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\",\n        \"address\": \"{{pchainAddress}}\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.exportKey\",\n    \"params\" :{\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\",\n        \"address\": \"{{pchainAddress}}\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3643,18 +3714,18 @@
 								"P"
 							]
 						},
-						"description": "Get the private key that controls a given address.\nThe returned private key can be added to a user with `platform.importKey`. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformexportkey)"
+						"description": "Get the private key that controls a given address.  \nThe returned private key can be added to a user with `platform.importKey`. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformexportkey)"
 					},
 					"response": []
 				},
 				{
-					"name": "getBalance",
+					"name": "getBalance - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.getBalance\",\n    \"params\" :{\n      \"addresses\":[\"{{pchainAddress}}\"]    \n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.getBalance\",\n    \"params\" :{\n      \"addresses\":[\"{{pchainAddress}}\"]    \n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3672,7 +3743,7 @@
 								"P"
 							]
 						},
-						"description": "Get the balance of an asset controlled by a given address. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetbalance)"
+						"description": "Get the balance of an asset controlled by a given address. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetbalance)"
 					},
 					"response": []
 				},
@@ -3706,13 +3777,13 @@
 					"response": []
 				},
 				{
-					"name": "getBlockchains",
+					"name": "getBlockchains - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.getBlockchains\",\n    \"params\": {},\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.getBlockchains\",\n    \"params\": {},\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3730,7 +3801,7 @@
 								"P"
 							]
 						},
-						"description": "Get all the blockchains that exist (excluding the P-Chain). [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetblockchains)"
+						"description": "Get all the blockchains that exist (excluding the P-Chain). [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetblockchains)"
 					},
 					"response": []
 				},
@@ -3759,7 +3830,7 @@
 								"P"
 							]
 						},
-						"description": "Get the status of a blockchain. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetblockchainstatus)"
+						"description": "Get the status of a blockchain. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetblockchainstatus)"
 					},
 					"response": []
 				},
@@ -3788,7 +3859,7 @@
 								"P"
 							]
 						},
-						"description": "Returns an upper bound on the number of AVAX that exist. This is an upper bound because it does not account for burnt tokens, including transaction fees. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetcurrentsupply)"
+						"description": "Returns an upper bound on the number of AVAX that exist. This is an upper bound because it does not account for burnt tokens, including transaction fees. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetcurrentsupply)"
 					},
 					"response": []
 				},
@@ -3817,7 +3888,7 @@
 								"P"
 							]
 						},
-						"description": "List the current validators of the given Subnet. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetcurrentvalidators)"
+						"description": "List the current validators of the given Subnet. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetcurrentvalidators)"
 					},
 					"response": []
 				},
@@ -3846,18 +3917,18 @@
 								"P"
 							]
 						},
-						"description": "Returns the height of the last accepted block [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetheight)"
+						"description": "Returns the height of the last accepted block [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetheight)"
 					},
 					"response": []
 				},
 				{
-					"name": "getMaxStakeAmount",
+					"name": "getMaxStakeAmount - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.getMaxStakeAmount\",\n    \"params\": {\n        \"subnetID\":\"\",\n        \"nodeID\":\"\",\n        \"startTime\": 123,\n        \"endTime\": 321\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.getMaxStakeAmount\",\n    \"params\": {\n        \"subnetID\":\"\",\n        \"nodeID\":\"\",\n        \"startTime\": 123,\n        \"endTime\": 321\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3875,7 +3946,7 @@
 								"P"
 							]
 						},
-						"description": "List the current validators of the given Subnet. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetcurrentvalidators)"
+						"description": "List the current validators of the given Subnet. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetmaxstakeamount)"
 					},
 					"response": []
 				},
@@ -3904,7 +3975,7 @@
 								"P"
 							]
 						},
-						"description": "Returns the minimum stake amount [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetminstake)"
+						"description": "Returns the minimum stake amount [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetminstake)"
 					},
 					"response": []
 				},
@@ -3933,18 +4004,18 @@
 								"P"
 							]
 						},
-						"description": "List the validators in the pending validator set of the specified Subnet. Each validator is not currently validating the Subnet but will in the future. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetpendingvalidators)"
+						"description": "List the validators in the pending validator set of the specified Subnet. Each validator is not currently validating the Subnet but will in the future. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetpendingvalidators)"
 					},
 					"response": []
 				},
 				{
-					"name": "getRewardUTXOs",
+					"name": "getRewardUTXOs - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.getRewardUTXOs\",\n    \"params\" :{\n        \"txID\":\"2nmH8LithVbdjaXsxVQCQfXtzN9hBbmebrsaEYnLM9T32Uy2Y4\",\n        \"encoding\": \"hex\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.getRewardUTXOs\",\n    \"params\" :{\n        \"txID\":\"2nmH8LithVbdjaXsxVQCQfXtzN9hBbmebrsaEYnLM9T32Uy2Y4\",\n        \"encoding\": \"hex\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3962,18 +4033,18 @@
 								"P"
 							]
 						},
-						"description": "Returns the UTXOs that were rewarded after the provided transaction's staking or delegation period ended."
+						"description": "Returns the UTXOs that were rewarded after the provided transaction's staking or delegation period ended. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetrewardutxos)"
 					},
 					"response": []
 				},
 				{
-					"name": "getStake",
+					"name": "getStake - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.getStake\",\n    \"params\": {\n        \"addresses\": [\"{{pchainAddress}}\"],\n        \"encoding\": \"hex\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.getStake\",\n    \"params\": {\n        \"addresses\": [\"{{pchainAddress}}\"],\n        \"encoding\": \"hex\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3991,7 +4062,7 @@
 								"P"
 							]
 						},
-						"description": "Returns the staked amount for an array of addresses [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetstake)"
+						"description": "Returns the staked amount for an array of addresses [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetstake)"
 					},
 					"response": []
 				},
@@ -4020,18 +4091,18 @@
 								"P"
 							]
 						},
-						"description": "Retrieve an assetID for a subnet’s staking asset. Currently this always returns the Primary Network’s staking assetID. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetstakingassetid)"
+						"description": "Retrieve an assetID for a subnet’s staking asset. Currently this always returns the Primary Network’s staking assetID. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetstakingassetid)"
 					},
 					"response": []
 				},
 				{
-					"name": "getSubnets",
+					"name": "getSubnets - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.getSubnets\",\n    \"params\": {\n        \"ids\": [\"{{avalancheSubnetId}}\"]\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.getSubnets\",\n    \"params\": {\n        \"ids\": [\"{{avalancheSubnetId}}\"]\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4049,7 +4120,7 @@
 								"P"
 							]
 						},
-						"description": "Get all the Subnets that exist. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformgetsubnets)"
+						"description": "Get all the Subnets that exist. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetsubnets)"
 					},
 					"response": []
 				},
@@ -4078,7 +4149,7 @@
 								"P"
 							]
 						},
-						"description": "Returns the specified transaction [More info](https://docs.avax.network/v1.0/en/api/avm/#avmgetbalance)"
+						"description": "Returns the specified transaction [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgettimestamp)"
 					},
 					"response": []
 				},
@@ -4107,7 +4178,7 @@
 								"P"
 							]
 						},
-						"description": "Get the total amount of nAVAX staked on the Primary Network. [More info](https://docs.avax.network/build/avalanchego-apis/p-chain#platformgettotalstake)"
+						"description": "Get the total amount of nAVAX staked on the Primary Network. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgettotalstake)"
 					},
 					"response": []
 				},
@@ -4136,7 +4207,7 @@
 								"P"
 							]
 						},
-						"description": "Returns the specified transaction [More info](https://docs.avax.network/v1.0/en/api/avm/#avmgetbalance)"
+						"description": "Returns the specified transaction [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgettx)"
 					},
 					"response": []
 				},
@@ -4165,7 +4236,7 @@
 								"P"
 							]
 						},
-						"description": "Returns the specified transaction [More info](https://docs.avax.network/v1.0/en/api/avm/#avmgetbalance)"
+						"description": "Returns the specified transaction [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgettxstatus)"
 					},
 					"response": []
 				},
@@ -4194,7 +4265,7 @@
 								"P"
 							]
 						},
-						"description": "Get the UTXOs that reference a given address. [More info](https://docs.avax.network/v1.0/en/api/avm/#avmgetutxos)"
+						"description": "Get the UTXOs that reference a given address. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetutxos)"
 					},
 					"response": []
 				},
@@ -4223,18 +4294,18 @@
 								"P"
 							]
 						},
-						"description": "Get the validators and their weights of a subnet or the Primary Network at a given P-Chain height. [More info](https://docs.avax.network/build/avalanchego-apis/platform-chain-p-chain-api#platform-getvalidatorsat)"
+						"description": "Get the validators and their weights of a subnet or the Primary Network at a given P-Chain height. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetvalidatorsat)"
 					},
 					"response": []
 				},
 				{
-					"name": "importAVAX",
+					"name": "importAVAX - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.importAVAX\",\n    \"params\": {\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\",\n        \"sourceChain\": \"X\",\n        \"to\":\"{{pchainAddress}}\",\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.importAVAX\",\n    \"params\": {\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\",\n        \"sourceChain\": \"X\",\n        \"to\":\"{{pchainAddress}}\",\n        \"from\": [\"{{pchainAddress}}\"],\n        \"changeAddr\": \"{{pchainAddress}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4252,18 +4323,18 @@
 								"P"
 							]
 						},
-						"description": "Complete a transfer of AVAX from the X-Chain to the C-Chain.\n\nBefore this method is called, you must call the X-Chain’s `exportAVAX` method to initiate the transfer. [More Info](https://docs.avax.network/v1.0/en/api/platform/#avmimportava)"
+						"description": "Complete a transfer of AVAX from the X-Chain to the C-Chain.\n\nBefore this method is called, you must call the X-Chain’s `exportAVAX` method to initiate the transfer. [More Info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformimportavax)"
 					},
 					"response": []
 				},
 				{
-					"name": "importKey",
+					"name": "importKey - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.importKey\",\n    \"params\" :{\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\",\n        \"privateKey\":\"{{privkey}}\"\n    }\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.importKey\",\n    \"params\" :{\n        \"username\":\"{{avalancheUsername}}\",\n        \"password\":\"{{avalanchePassword}}\",\n        \"privateKey\":\"{{privkey}}\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4281,7 +4352,7 @@
 								"P"
 							]
 						},
-						"description": "Give a user control over an address by providing the private key that controls the address. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformimportkey)"
+						"description": "Give a user control over an address by providing the private key that controls the address. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformimportkey)"
 					},
 					"response": []
 				},
@@ -4310,18 +4381,18 @@
 								"P"
 							]
 						},
-						"description": "Issue a transaction to the Platform Chain. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformissuetx)"
+						"description": "Issue a transaction to the Platform Chain. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformissuetx)"
 					},
 					"response": []
 				},
 				{
-					"name": "listAddresses",
+					"name": "listAddresses - DEPRECATED",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.listAddresses\",\n    \"params\": {\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
+							"raw": "//Deprecated as of v1.9.12.\n\n\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"platform.listAddresses\",\n    \"params\": {\n        \"username\": \"{{avalancheUsername}}\",\n        \"password\": \"{{avalanchePassword}}\"\n    },\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4339,7 +4410,7 @@
 								"P"
 							]
 						},
-						"description": "List the addresses controlled by the given user. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformlistaddresses)"
+						"description": "List the addresses controlled by the given user. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformlistaddresses)"
 					},
 					"response": []
 				},
@@ -4368,7 +4439,7 @@
 								"P"
 							]
 						},
-						"description": "Sample validators from the specified Subnet. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformsamplevalidators)"
+						"description": "Sample validators from the specified Subnet. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformsamplevalidators)"
 					},
 					"response": []
 				},
@@ -4397,7 +4468,7 @@
 								"P"
 							]
 						},
-						"description": "Get the Subnet that validates a given blockchain. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformvalidatedby)"
+						"description": "Get the Subnet that validates a given blockchain. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformvalidatedby)"
 					},
 					"response": []
 				},
@@ -4426,7 +4497,7 @@
 								"P"
 							]
 						},
-						"description": "Get the IDs of the blockchains a Subnet validates. [More info](https://docs.avax.network/v1.0/en/api/platform/#platformvalidates)"
+						"description": "Get the IDs of the blockchains a Subnet validates. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformvalidates)"
 					},
 					"response": []
 				}
