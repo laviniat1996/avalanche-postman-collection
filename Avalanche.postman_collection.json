@@ -1182,6 +1182,96 @@
 						"description": "Send a quantity of an asset to an address. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#avmsendnft)"
 					},
 					"response": []
+				},
+				{
+					"name": "wallet_issueTx",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "//Endpoint deprecated as of v1.9.12.\n\n{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     : 1,\n    \"method\" :\"wallet.issueTx\",\n    \"params\" :{\n        \"tx\":\"0x00000009de31b4d8b22991d51aa6aa1fc733f23a851a8c9400000000000186a0000000005f041280000000005f9ca900000030390000000000000001fceda8f90fcb5d30614b99d79fc4baa29307762668f16eb0259a57c2d3b78c875c86ec2045792d4df2d926c40f829196e0bb97ee697af71f5b0a966dabff749634c8b729855e937715b0e44303fd1014daedc752006011b730\",\n        \"encoding\": \"hex\"\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ext/bc/X/wallet",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ext",
+								"bc",
+								"X",
+								"wallet"
+							]
+						},
+						"description": "Send a signed transaction to the network and assume the TX will be accepted. `encoding` specifies the format of the signed transaction. Can only be `hex` when a value is provided. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#walletissuetx)"
+					},
+					"response": []
+				},
+				{
+					"name": "wallet_send",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"wallet.send\",\n    \"params\" :{\n        \"assetID\"   : \"AVAX\",\n        \"amount\"    : 10000,\n        \"to\"        : \"X-avax18jma8ppw3nhx5r4ap8clazz0dps7rv5ukulre5\",\n        \"memo\"      : \"hi, mom!\",\n        \"from\"      : [\"X-avax18jma8ppw3nhx5r4ap8clazz0dps7rv5ukulre5\"],\n        \"changeAddr\": \"X-avax1turszjwn05lflpewurw96rfrd3h6x8flgs5uf8\",\n        \"username\"  : \"userThatControlsAtLeast10000OfThisAsset\",\n        \"password\"  : \"myPassword\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ext/bc/X/wallet",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ext",
+								"bc",
+								"X",
+								"wallet"
+							]
+						},
+						"description": "Send a quantity of an asset to an address and assume the TX will be accepted so that future calls can use the modified UTXO set. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#walletsend)"
+					},
+					"response": []
+				},
+				{
+					"name": "wallet_sendMultiple",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"wallet.sendMultiple\",\n    \"params\" :{\n        \"outputs\": [\n            {\n                \"assetID\" : \"AVAX\",\n                \"to\"      : \"X-avax18jma8ppw3nhx5r4ap8clazz0dps7rv5ukulre5\",\n                \"amount\"  : 1000000000\n            },\n            {\n                \"assetID\" : \"26aqSTpZuWDAVtRmo44fjCx4zW6PDEx3zy9Qtp2ts1MuMFn9FB\",\n                \"to\"      : \"X-avax18knvhxx8uhc0mwlgrfyzjcm2wrd6e60w37xrjq\",\n                \"amount\"  : 10\n            }\n        ],\n        \"memo\"      : \"hi, mom!\",\n        \"from\"      : [\"X-avax18jma8ppw3nhx5r4ap8clazz0dps7rv5ukulre5\"],\n        \"changeAddr\": \"X-avax1turszjwn05lflpewurw96rfrd3h6x8flgs5uf8\",\n        \"username\"  : \"username\",\n        \"password\"  : \"myPassword\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ext/bc/X/wallet",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ext",
+								"bc",
+								"X",
+								"wallet"
+							]
+						},
+						"description": "Send multiple transfers of `amount` of `assetID`, to a specified address from a list of owned of addresses and assume the TX will be accepted so that future calls can use the modified UTXO set. [More info](https://docs.avax.network/apis/avalanchego/apis/x-chain#walletsendmultiple)"
+					},
+					"response": []
 				}
 			],
 			"description": "The X-Chain, Avalanche’s native platform for creating and trading assets, is an instance of the Avalanche Virtual Machine (AVM). This API allows clients to create and trade assets on the X-Chain and other instances of the AVM. [More info](https://docs.avax.network/v1.0/en/api/avm)"
@@ -1366,6 +1456,36 @@
 							]
 						},
 						"description": "Getting an account’s balance."
+					},
+					"response": []
+				},
+				{
+					"name": "eth_getChainConfig",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"eth_getChainConfig\",\n    \"params\" :[]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ext/bc/C/rpc",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ext",
+								"bc",
+								"C",
+								"rpc"
+							]
+						},
+						"description": "`eth_getChainConfig` returns chain config. This API is enabled by default with `internal-eth` namespace. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#eth_getchainconfig)"
 					},
 					"response": []
 				},
@@ -2148,6 +2268,161 @@
 						"description": "Calculate a cryptographic hash.\n\nThe input parameter contains hexidecimal bytes of arbitrary length. The example here uses the UTF-8 text string “snowstorm” converted to hexidecimal bytes."
 					},
 					"response": []
+				},
+				{
+					"name": "admin_setLogLevel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"admin.setLogLevel\",\n    \"params\": {\n        \"level\":\"info\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}//ext/bc/C/admin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"",
+								"ext",
+								"bc",
+								"C",
+								"admin"
+							]
+						},
+						"description": "Sets the log level of the C-Chain. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#adminsetloglevel)"
+					},
+					"response": []
+				},
+				{
+					"name": "admin_startCPUProfiler",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"admin.startCPUProfiler\",\n    \"params\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}//ext/bc/C/admin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"",
+								"ext",
+								"bc",
+								"C",
+								"admin"
+							]
+						},
+						"description": "Starts a CPU profile. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#adminstartcpuprofiler)"
+					},
+					"response": []
+				},
+				{
+					"name": "admin_stopCPUProfiler",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"admin.stopCPUProfiler\",\n    \"params\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}//ext/bc/C/admin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"",
+								"ext",
+								"bc",
+								"C",
+								"admin"
+							]
+						},
+						"description": "Stops and writes a CPU profile. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#adminstopcpuprofiler)"
+					},
+					"response": []
+				},
+				{
+					"name": "admin_memoryProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"admin.memoryProfile\",\n    \"params\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}//ext/bc/C/admin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"",
+								"ext",
+								"bc",
+								"C",
+								"admin"
+							]
+						},
+						"description": "Runs and writes a memory profile. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#adminmemoryprofile)"
+					},
+					"response": []
+				},
+				{
+					"name": "admin_lockProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"admin.lockProfile\",\n    \"params\": {}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}//ext/bc/C/admin",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"",
+								"ext",
+								"bc",
+								"C",
+								"admin"
+							]
+						},
+						"description": "Runs a mutex profile writing to the `coreth_performance_c` directory. [More info](https://docs.avax.network/apis/avalanchego/apis/c-chain#adminlockprofile)"
+					},
+					"response": []
 				}
 			],
 			"description": "This document describes the API of the C-Chain, which is an instance of the Ethereum Virtual Machine (EVM.)\n\nNote: Ethereum has its own notion of `networkID` and `chainID`. The C-Chain uses `1` and `43110` for these values, obtained using the `net_version` and `eth_chainId` methods shown below. These have no relationship to AVA’s view of networkID and chainID, and are purely internal to the C-Chain. [More info](https://docs.avax.network/v1.0/en/api/evm)"
@@ -2179,7 +2454,7 @@
 								"health"
 							]
 						},
-						"description": "Get health check on this node. [More info](https://docs.avax.network/apis/avalanchego/apis/health#get-request)"
+						"description": "Get health check on this node. [More info](https://docs.avax.network/apis/avalanchego/apis/health#methods)"
 					},
 					"response": []
 				}
