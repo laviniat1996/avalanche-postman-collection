@@ -10561,6 +10561,35 @@
 					"response": []
 				},
 				{
+					"name": "getBlockByHeight",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jsonrpc\":\"2.0\",\n    \"id\"     :1,\n    \"method\" :\"platform.getBlockByHeight\",\n    \"params\" :{\n        \"height\": 7768381,\n        \"encoding\": \"json\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/ext/bc/P",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"ext",
+								"bc",
+								"P"
+							]
+						},
+						"description": "Get a block by its ID. [More info](https://docs.avax.network/apis/avalanchego/apis/p-chain#platformgetblock)"
+					},
+					"response": []
+				},
+				{
 					"name": "getBlockchains - DEPRECATED",
 					"request": {
 						"method": "POST",
